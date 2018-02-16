@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tamal.sensor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".accelerometer" />
+        <activity android:name=".light" />
+        <activity android:name=".proximity" />
+        <activity android:name=".linegraph" />
+        <activity android:name=".mediaplayer" />
+        <activity
+            android:name=".which"
+            android:label="@string/title_activity_which"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".gpsloc" />
+        <activity android:name=".gpstracker" />
+        <activity android:name=".more"></activity>
+    </application>
+
+</manifest>
